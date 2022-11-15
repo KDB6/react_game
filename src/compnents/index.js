@@ -1,0 +1,5 @@
+export {default as MainConts} from './MainConts'
+export {default as VidoeConts} from './VidoeConts'
+export {default as ChannelConts} from './ChannelConts'
+export {default as SearchConts} from './SearchConts'
+export {default as HeaderConts} from './HeaderConts'
