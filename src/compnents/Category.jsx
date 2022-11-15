@@ -1,9 +1,18 @@
 import React from 'react'
 
-const AsideConts = () => {
+import { categorys } from "../utils/contents"
+
+const Category = () => {
   return (
-    <aside id='aside'>aside</aside>
+    <div>
+      {categorys.map((category) => (
+        <button>
+        <span>{category.icon}</span>
+        <span>{category.name}</span>
+      </button>
+      ))}
+    </div>
   )
 }
 
-export default AsideConts
+export default Category

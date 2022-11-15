@@ -1,5 +1,5 @@
 import React from 'react'
-import { Category, Video } from './index';
+import { Category, Videos } from './index';
 
 const MainConts = () => {
   return (
@@ -8,7 +8,10 @@ const MainConts = () => {
         <Category />
       </aside>
       <section id='contents'>
-        <Video />
+        <h2>
+          <em>??</em>Youtuber
+        </h2>
+        <Videos />
       </section>
     </main>
   )
