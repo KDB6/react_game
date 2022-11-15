@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { categorys } from "../utils/contents"
+import { categories } from "../utils/contents"
 
-const Category = ({selectCategory, setSelectCaegory}) => {
+const Category = ({selectCategory, setSelectCategory}) => {
   return (
     <div>
-      {categorys.map((category) => (
-        <button key={category.name} onClick={() => setSelectCaegory(selectCategory)}>
+      {categories.map((category) => (
+        <button key={category.name} onClick={() => setSelectCategory(category.name)}>
         <span>{category.icon}</span>
         <span>{category.name}</span>
       </button>
