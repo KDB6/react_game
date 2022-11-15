@@ -1,0 +1,12 @@
+#main {
+    display: flex;
+    
+    #aside{
+        width: 20%;
+        min-height: 100vh;
+        border-right: 1px solid var(--bg--dark-border);
+    }
+    #contents{
+        width: 80%;
+    }
+}

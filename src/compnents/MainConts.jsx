@@ -1,8 +1,16 @@
 import React from 'react'
+import { Category, Video } from './index';
 
 const MainConts = () => {
   return (
-    <div>MainConts</div>
+    <main id='main'>
+      <aside id='aside'>
+        <Category />
+      </aside>
+      <section id='contents'>
+        <Video />
+      </section>
+    </main>
   )
 }
 
