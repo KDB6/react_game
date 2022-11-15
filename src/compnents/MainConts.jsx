@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 
-import { fetchAPI } from '../utils/fetchAPI';
-import { Category, Videos } from './index';
+import { fetchAPI } from '../utils/fetchAPI'
+
+import { Category, Videos } from './'
 
 const MainConts = () => {
-  const [selectCategory, setSelectCaegory] = useState("우왁굳의 게임방송")
-  const [videos, setVideos] = useState{null}
+  const [selectCategory, setSelectCategory] = useState('우왁굳의 게임방송')
+  const [videos, setVideos] = useState(null)
 
   useEffect(() => {
-    fetchAPI(`searc?part=snippet&q=우왁굳의 게임방송`).then((data) => 
+    fetchAPI(`search?part=snippet&q=우왁굳의 게임방송`).then((data) => 
       console.log(data)
     ) 
   }, []);
@@ -16,7 +17,7 @@ const MainConts = () => {
   return (
     <main id='main'>
       <aside id='aside'>
-        <Category selectCategory={selectCategory} setSelectCaegory={setSelectCaegory} />
+        <Category selectCategory={selectCategory} setSelectCategory={setSelectCategory} />
       </aside>
       <section id='contents'>
         <h2>

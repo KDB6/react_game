@@ -1,4 +1,4 @@
-export const categorys = [
+export const categories = [
     {name: "로마러", icon: "R"},
     {name: "박서림", icon: "P"},
     {name: "죠니월드", icon: "J"},
