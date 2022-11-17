@@ -87,3 +87,47 @@
 }
 
 // VideoConts
+.video__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+
+    .video__view {
+        // background: #fff;
+        width: 77%;
+        height: 600px;
+        margin-left: 1%;
+        position: relative;
+
+        .play {
+            width: 100%;
+            position: relative;
+            padding-bottom: 27.65%;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .video__list {
+        margin-right: 1%;
+        background: #ccc;
+        width: 20%;
+        height: 900px;
+    }
+
+    .video__title {
+        background: #757575;
+        width: 77%;
+        height: 80px;
+        margin-left: 1%;
+        position: absolute;
+        bottom: 0.5%;
+    }
+}
