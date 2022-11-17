@@ -6,7 +6,9 @@ const Category = ({selectCategory, setSelectCategory}) => {
   return (
     <div>
       {categories.map((category) => (
-        <button key={category.name} onClick={() => setSelectCategory(category.name)}>
+        <button 
+          style={{backgroundColor: category.name === selectCategory ? '#262635' : 'transparent'}}
+          key={category.name} onClick={() => setSelectCategory(category.name)}>
         <span>{category.icon}</span>
         <span>{category.name}</span>
       </button>

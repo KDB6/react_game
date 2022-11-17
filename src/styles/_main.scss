@@ -65,11 +65,11 @@
 .boxInfo {
     
     .videoTitle {
-        margin-top: 5px;
+        margin-top: 1%;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 1; 
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
 
             span {
@@ -78,6 +78,7 @@
         }
 
     .channelName {
+        color: #c5c5c5;
         font-size: 14px;
         margin-top: 3px;
     }
