@@ -2,7 +2,19 @@ import React from 'react'
 
 const VidoeConts = () => {
   return (
-    <div>VidoeConts</div>
+    <section className='video'>
+      <div className='video__view'>
+
+      </div>
+
+      <div className="video__list">
+
+      </div>
+      
+      <div className="video__title">
+
+      </div>
+    </section>
   )
 }
 

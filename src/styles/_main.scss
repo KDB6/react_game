@@ -17,7 +17,7 @@
             padding: 5px 10px;
 
             &:hover {
-                background: rgb(38, 38, 53);
+                background: #262635;
             }
 
             span:first-child {
@@ -42,6 +42,7 @@
     }
 }
 
+// Videos
 .videos__inner {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +54,7 @@
     }
 }
 
+// VideoCard
 .box {
     max-height: 200px;
 
@@ -83,3 +85,5 @@
         margin-top: 3px;
     }
 }
+
+// VideoConts
