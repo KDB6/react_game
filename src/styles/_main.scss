@@ -54,21 +54,31 @@
 }
 
 .box {
-    > img {
+    max-height: 200px;
+
+    img {
         object-fit: cover;
-        height: 205px;
+        max-height: 200px;
     }
 }
 
-.title {
-
-    h2 {
-        font-size: 16px;
+.boxInfo {
+    
+    .videoTitle {
         margin-top: 5px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 1; 
         -webkit-box-orient: vertical;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+    .channelName {
+        font-size: 14px;
+        margin-top: 3px;
     }
 }

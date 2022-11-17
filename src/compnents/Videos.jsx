@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChannelCard, VideoCard, Loader } from './';
+import { VideoCard, Loader } from './';
 
 const Videos = ({ videos }) => {
   if(!videos?.length) return <Loader />
@@ -8,8 +8,7 @@ const Videos = ({ videos }) => {
     <article className='videos__inner'>
       {videos.map((item, idx) => (
         <div key={idx}>
-          {item.id.videoId && <VideoCard video={item} />}
-          {item.id.channelId && <ChannelCard channel={item} />}
+          <VideoCard video={item} />
         </div>
       ))}
     </article>
