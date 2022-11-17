@@ -1,28 +1,17 @@
 import React from 'react'
+import { ChannelCard, VideoCard, Loader } from './';
 
-const Videos = () => {
+const Videos = ({ videos }) => {
+  if(!videos?.length) return <Loader />
+
   return (
     <article className='videos__inner'>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      {videos.map((item, idx) => (
+        <div key={idx}>
+          {item.id.videoId && <VideoCard video={item} />}
+          {item.id.channelId && <ChannelCard channel={item} />}
+        </div>
+      ))}
     </article>
   )
 }
