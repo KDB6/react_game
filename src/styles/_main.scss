@@ -93,27 +93,58 @@
 
     .video__info {
         display: flex;
+        flex-wrap: wrap;
         width: 77%;
-    }
 
-    .video__view {
-        // background: #fff;
-        width: 77%;
-        height: 600px;
-        margin-left: 1%;
-        position: relative;
-
-        .play {
+        .video__view {
+            // background: #fff;
             width: 100%;
+            height: 600px;
+            margin-left: 1%;
             position: relative;
-            padding-bottom: 27.65%;
-
-            iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
+    
+            .play {
                 width: 100%;
-                height: 100%;
+                position: relative;
+                padding-bottom: 27.65%;
+    
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        
+        .video__title {
+            background: #757575;
+            margin-top: 5%;
+            width: 100%;
+            height: 80px;
+            margin-left: 1%;
+            
+            .title {
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 5px;
+                font-weight: 600;
+    
+                .count {
+                    display: flex;
+                    float: right;
+                    font-weight: 400;
+        
+                    .viewCount {
+                        margin-right: 15px;
+                    }
+                }
+            }
+    
+            .channelTitle {
+                font-weight: 200;
+                margin-bottom: 5px;
             }
         }
     }
@@ -121,7 +152,6 @@
     .video__list {
         margin-right: 1%;
         width: 20%;
-        height: 900px;
         
             .list {
 
@@ -132,36 +162,6 @@
                     }
                 }
             }
-    }
-
-    .video__title {
-        background: #757575;
-        width: 77%;
-        height: 80px;
-        margin-left: 1%;
-        float: top;
-
-        .title {
-            color: #fff;
-            font-size: 16px;
-            margin-bottom: 5px;
-            font-weight: 600;
-
-            .count {
-                display: flex;
-                float: right;
-                font-weight: 400;
-    
-                .viewCount {
-                    margin-right: 15px;
-                }
-            }
-        }
-
-        .channelTitle {
-            font-weight: 200;
-            margin-bottom: 5px;
-        }
     }
 }
 
