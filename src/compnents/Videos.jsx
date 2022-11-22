@@ -5,7 +5,7 @@ const Videos = ({ videos }) => {
   if(!videos?.length) return <Loader />
 
   return (
-    <article className='videos__inner'>
+    <article className="videos__inner">
       {videos.map((item, idx) => (
         <div key={idx}>
           <VideoCard video={item} />
