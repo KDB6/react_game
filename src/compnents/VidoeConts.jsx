@@ -28,10 +28,26 @@ const VideoConts = () => {
   return (
     <section className='video'>
       <div className="video__top">
-        <div className='video__view'>
-          <div className="play">
-            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}
-            controls />
+        <div className="video__info">
+          <div className='video__view'>
+            <div className="play">
+              <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}
+              controls />
+            </div>
+          </div>
+
+          <div className="video__title">
+            <div className="title">
+              {title}
+              <div className='count'>
+                <div className="viewCount">조회 수 : {viewCount}회</div>
+                <div className="likeCount">♥ : {likeCount}개</div>
+              </div>
+            </div>
+            <div className="channelTitle">{channelTitle}</div>
+            <div className="channelId">
+              <Link to={`/channel/${channelId}`}>채널 : {channelId}</Link>
+            </div> 
           </div>
         </div>
 
@@ -39,14 +55,6 @@ const VideoConts = () => {
           <div className="list">
             <Videos videos={videos} />
           </div>
-        </div>
-        <div className="video__title">
-          <div className="title">{title}</div>
-          <div className="channelId">
-            <Link to={`/channel/${channelId}`}>{channelId}</Link></div>
-          <div className="channelTitle">{channelTitle}</div>
-          <div className="viewCount">{viewCount}</div>
-          <div className="likeCount">{likeCount}</div>
         </div>
       </div>
       
