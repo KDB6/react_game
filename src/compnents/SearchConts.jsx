@@ -5,7 +5,7 @@ import { fetchAPI } from '../utils/fetchAPI'
 import { Videos, Category } from './'
 
 const SearchConts = () => {
-  const [selectCategory, setSelectCategory] = useState('우왁굳의 게임방송')
+  const [selectCategory, setSelectCategory] = useState(null)
   const [videos, setVideos] = useState(null)
   const { searchTerm } = useParams()
 
@@ -16,23 +16,21 @@ const SearchConts = () => {
   }, [searchTerm])
 
   useEffect(() => {
-    fetchAPI(`search?part=snippet&q=${selectCategory}`).then((data) =>
+    fetchAPI(`search?part=snippet&q=${selectCategory}}&type=video`).then((data) =>
     setVideos(data.items)
     ) 
   }, [selectCategory]);
 
   return (
-    <>
-      <main id="main">
-        <aside id='aside'>
-          <Category selectCategory={selectCategory} setSelectCategory={setSelectCategory} />
-        </aside>
-      </main>
+    <main id="main">
+      <aside id='aside'>
+        <Category selectCategory={selectCategory} setSelectCategory={setSelectCategory} />
+      </aside>
+    <section id="contents">
       <div className="result"><span>{searchTerm}</span> 검색 결과입니다.</div>
-      <div>
-        <Videos videos={videos} />
-      </div>
-    </>
+      <Videos videos={videos} />
+    </section>
+    </main>
   )
 }
 export default SearchConts
