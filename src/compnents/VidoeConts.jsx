@@ -34,21 +34,21 @@ const VideoConts = () => {
               <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}
               controls />
             </div>
+            <div className="video__title">
+              <div className="title">
+                {title}
+                <div className='count'>
+                  <div className="viewCount">조회 수 : {viewCount}회</div>
+                  <div className="likeCount">♥ : {likeCount}개</div>
+                </div>
+              </div>
+              <div className="channelTitle">{channelTitle}</div>
+              <div className="channelId">
+                <Link to={`/channel/${channelId}`}>채널 : {channelId}</Link>
+              </div> 
+            </div>
           </div>
 
-          <div className="video__title">
-            <div className="title">
-              {title}
-              <div className='count'>
-                <div className="viewCount">조회 수 : {viewCount}회</div>
-                <div className="likeCount">♥ : {likeCount}개</div>
-              </div>
-            </div>
-            <div className="channelTitle">{channelTitle}</div>
-            <div className="channelId">
-              <Link to={`/channel/${channelId}`}>채널 : {channelId}</Link>
-            </div> 
-          </div>
         </div>
 
         <div className="video__list"> 

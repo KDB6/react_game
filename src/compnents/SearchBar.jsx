@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom'
+
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const navigate = useNavigate()
@@ -23,7 +24,7 @@ const SearchBar = () => {
       <input
         type="text"
         id="searchInput"
-        className="input__searc"
+        className="input__search"
         placeholder="원하시는 영상을 검색해주세요."
         title="검색"
         value={searchTerm || ''}
