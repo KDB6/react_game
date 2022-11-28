@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { fetchAPI } from '../utils/fetchAPI';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
-import { Videos } from './'
+import { Videos } from './';
 
 const ChannelConts = () => {
   const [ channelDetail, setchannelDetail ] = useState();
